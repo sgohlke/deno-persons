@@ -1,8 +1,4 @@
-import {
-  serve,
-  ServerRequest,
-} from "https://deno.land/std@0.67.0/http/server.ts";
-import { PersonService } from "./personservice.ts";
+import { PersonService, serve, ServerRequest } from "./deps.ts";
 const portToRun = 3017;
 const s = serve({ port: portToRun });
 console.log(`Running person server on  http://localhost:${portToRun}/`);
@@ -30,7 +26,7 @@ for await (const req of s) {
   } else {
     req.respond(
       {
-        status: 404
+        status: 404,
       },
     );
   }
