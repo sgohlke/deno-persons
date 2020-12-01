@@ -1,6 +1,6 @@
 export {
   PersonService,
-} from "https://raw.githubusercontent.com/sgohlke/ModPersonServiceDeno/1.0.1/personservice.ts";
+} from "https://raw.githubusercontent.com/sgohlke/ModPersonServiceDeno/1.0.2/personservice.ts";
 export {
   serve,
   ServerRequest,
