@@ -1,4 +1,4 @@
-import { PersonService, serve, ServerRequest } from "./deps.ts";
+import { PersonService, serve } from "./deps.ts";
 const portToRun = 3017;
 const s = serve({ port: portToRun });
 console.log(`Running person server on  http://localhost:${portToRun}/`);
