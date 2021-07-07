@@ -1,9 +1,9 @@
 import { PersonService, serve } from "./deps.ts";
 const portToRun = 3017;
-const s = serve({ port: portToRun });
+const server = serve({ port: portToRun });
 console.log(`Running person server on  http://localhost:${portToRun}/`);
 
-for await (const req of s) {
+for await (const req of server) {
   if (req.method === "GET" && req.url.includes("/person")) {
     //Set response headers to return application/json for all responses
     const responseHeaders = new Headers();
