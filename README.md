@@ -5,7 +5,7 @@ Persons Test server example using Deno. Caution: This application needs a Deno v
 To run execute **deno run --allow-net  webserver.ts**.
 
 ## Lint
-To check for linting issues execute **deno lint --unstable**.
+To check for linting issues execute **deno lint**.
 
 ## Routes
 * /person Get all persons

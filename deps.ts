@@ -1,6 +1,6 @@
 export {
   PersonService,
-} from "https://raw.githubusercontent.com/sgohlke/ModPersonServiceDeno/1.0.7/personservice.ts";
+} from "https://raw.githubusercontent.com/sgohlke/ModPersonServiceDeno/1.0.8/personservice.ts";
 export {
-  serve,
-} from "https://deno.land/std@0.106.0/http/server.ts";
+  listenAndServe,
+} from "https://deno.land/std@0.113.0/http/server.ts";
