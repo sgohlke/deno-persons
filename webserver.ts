@@ -1,4 +1,4 @@
-import { PersonService, Server } from "./deps.ts";
+import { PersonService, serve } from "./deps.ts";
 const port = 3017;
 const handler = (req: Request) => {
   if (req.method === 'GET' && req.url.includes('/person')) {
@@ -17,6 +17,4 @@ const handler = (req: Request) => {
   }
 }
 
-const server = new Server({port, handler});
-console.log(`Running person server on  http://localhost:${port}/`);
-await server.listenAndServe();
+serve(handler, {port});
